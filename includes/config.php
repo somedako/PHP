@@ -1,6 +1,6 @@
 <?php
  $config = [
-    'title' => ' Блог  Lorum Ipsum!',
+    'title' => 'Lorum Ipsum!',
     'menu' => [
         'landing' => 'Главная',
         'blog' => 'Блог',
