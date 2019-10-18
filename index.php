@@ -30,14 +30,11 @@ require_once __DIR__ . '/includes/config.php';
               <div class="block_content">
                 <div class="articles articles_horizontal">
                     <?php
-                    $articles = mysqli_query($connection, "SELECT * FROM `articles`")
-                    ?>
-                    $art
-                    <?php
+                    $articles = mysqli_query($connection, "SELECT * FROM `articles`");
                     while ($art = mysqli_fetch_assoc($articles)) {
                         ?>
                         <article class="article">
-                            <div class="article_image" style="background-image: url(/media/images/post-image.jpg);"></div>
+                            <div class="article_image" style="background-image: url();"></div>
                             <div class="article_info">
                                 <a href="#"><?= $art['title']?></a>
                                 <div class="article_info_meta">
