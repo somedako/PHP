@@ -1,17 +1,18 @@
 <?php
-require_once __DIR__ . '/config.php';
+$data = require_once __DIR__ . '/config.php';
+$menu = $data['menu'];
 ?>
     <header id="header">
       <div class="header_top">
         <div class="container">
           <div class="header_logo">
-            <h1><?php echo $config['title']?></h1>
+            <h1><?php echo $data['title']?></h1>
           </div>
           <nav class="header_menu">
             <ul>
-              <li><a href="#"><?= $config['menu']['landing']?></a></li>
-              <li><a href="#"><?= $config['menu']['blog']?></a></li>
-              <li><a href="#"><?= $config['menu']['news']?></a></li>
+              <li><a href="#"><?= $menu['landing']?></a></li>
+              <li><a href="#"><?= $menu['blog']?></a></li>
+              <li><a href="#"><?= $menu['news']?></a></li>
             </ul>
           </nav>
         </div>
